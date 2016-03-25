@@ -18,6 +18,8 @@ public:
   T getValue();
   Node<T> *getNext();
   Node<T> *getPrev();
+  void setNext(Node<T>* n);
+  void setPrev(Node<T>* n);
 };
 
 #endif /* __NODE_H_ */

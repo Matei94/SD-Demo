@@ -1,4 +1,5 @@
 #include <cstddef>
+
 #include "Node.h"
 
 template <typename T>
@@ -47,3 +48,16 @@ template <typename T>
 Node<T> *Node<T>::getPrev() {
   return this->prev;
 }
+
+template <typename T>
+void Node<T>::setNext(Node<T>* n) {
+  this->next = n;
+}
+
+template <typename T>
+void Node<T>::setPrev(Node<T>* n) {
+  this->prev = prev;
+}
+
+template class Node<int>;
+template class Node<float>;
